@@ -41,3 +41,13 @@ p {
 table {
   margin: auto;
 }
+.select-button {
+  width:  250px;
+  height: 50px;
+  background-color: silver;
+}
+.q-No {
+  font-size: xx-large;
+  font-weight: bolder;
+  background-color: rgba(240, 255, 255, 0.7);
+}
