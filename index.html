@@ -26,7 +26,7 @@
     全部で10問<br>
     是非チャレンジしてみてください！
   </h2>
-  <h3>
+  <h3 class="base-size">
     制限時間はありませんがそのうち付けたい！！！
   </h3>
   <h4>
@@ -58,8 +58,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q1-btn">次へ</button>
+    <p id="q1-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -84,8 +84,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q2-btn">次へ</button>
+    <p id="q2-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -110,8 +110,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q3-btn">次へ</button>
+    <p id="q3-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -136,8 +136,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q4-btn">次へ</button>
+    <p id="q4-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -161,8 +161,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q5-btn">次へ</button>
+    <p id="q5-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -174,21 +174,21 @@
     <table>
       <tr>
         <td>
-          <button class="select-button" id="q6-Abtn">A：10日</button>
-          <button class="select-button" id="q6-Bbtn">B：25日</button>
+          <button class="select-button" id="q6-Abtn">A：1人</button>
+          <button class="select-button" id="q6-Bbtn">B：4人</button>
         </td>
       </tr>
     </table>  
     <table>
       <tr>
         <td>
-          <button class="select-button" id="q6-Cbtn">C：50日</button>
-          <button class="select-button" id="q6-Dbtn">D：100日</button>
+          <button class="select-button" id="q6-Cbtn">C：40人</button>
+          <button class="select-button" id="q6-Dbtn">D：100人</button>
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q6-btn">次へ</button>
+    <p id="q6-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -213,8 +213,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q7-btn">次へ</button>
+    <p id="q7-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
@@ -239,8 +239,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q8-btn">次へ</button>
+    <p id="q8-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
   
@@ -265,8 +265,8 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q9-btn">次へ</button>
+    <p id="q9-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
   
@@ -290,15 +290,22 @@
         </td>
       </tr>
     </table>
-    <p>
-      <button class="button" id="q10-btn">次へ</button>
+    <p id="q10-btn" style="display: none;">
+      <button class="button">次へ</button>
     </p>
   </div>
 
   <div id="end-page" style="display: none;">
-    <p>結果発表！</p>
-    <p>あなたの点数は</p>
-    <p class="result"></p>
+    <p class="announce">結果発表！</p>
+    <p class="your-point">あなたの点数は</p>
+    <table>
+      <tr>
+        <td>
+          <label class="result"></label>
+          <label class="base-size">点です</label>
+        </td>
+      </tr>
+    </table>
     <p>
       <button class="button" id="finish-btn">スタートへ</button>
     </p>
