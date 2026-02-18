@@ -11,6 +11,7 @@ topToQ1.addEventListener('click', function() {
 });
 
 function q1Judge(q1Select) {
+  const getNextOne = document.getElementById("q1-btn");
   let q1Result = 0;
   if (q1Select === "A") {
     q1Result = 10;
@@ -37,6 +38,7 @@ function q1Judge(q1Select) {
     q1C.style.background = "silver";
     q1D.style.background = "lime";
   }
+  getNextOne.style.display = "block";
   totalScore["q1"] = q1Result;
 }
 
@@ -70,6 +72,7 @@ Q1ToQ2.addEventListener('click', function() {
 });
 
 function q2Judge(q2Select) {
+  const getNextTwo = document.getElementById("q2-btn");
   let q2Result = 0;
   if (q2Select === "A") {
     q2Result = 0;
@@ -96,6 +99,7 @@ function q2Judge(q2Select) {
     q2C.style.background = "silver";
     q2D.style.background = "lime";
   }
+  getNextTwo.style.display = "block";
   totalScore["q2"] = q2Result;
 }
 
@@ -129,6 +133,7 @@ Q2ToQ3.addEventListener('click', function() {
 });
 
 function q3Judge(q3Select) {
+  const getNextThree = document.getElementById("q3-btn")
   let q3Result = 0;
   if (q3Select === "A") {
     q3Result = 0;
@@ -155,6 +160,7 @@ function q3Judge(q3Select) {
     q3C.style.background = "silver";
     q3D.style.background = "lime";
   }
+  getNextThree.style.display = "block";
   totalScore["q3"] = q3Result;
 }
 
@@ -186,6 +192,7 @@ Q3ToQ4.addEventListener('click', function() {
 });
 
 function q4Judge(q4Select) {
+  const getNextFour = document.getElementById("q4-btn")
   let q4Result = 0;
   if (q4Select === "A") {
     q4Result = 10;
@@ -212,6 +219,7 @@ function q4Judge(q4Select) {
     q4C.style.background = "silver";
     q4D.style.background = "lime";
   }
+  getNextFour.style.display = "block";
   totalScore["q4"] = q4Result;
 }
 
@@ -243,6 +251,7 @@ Q4ToQ5.addEventListener('click', function() {
 });
 
 function q5Judge(q5Select) {
+  const getNextFive = document.getElementById("q5-btn")
   let q5Result = 0;
   if (q5Select === "A") {
     q5Result = 10;
@@ -259,7 +268,8 @@ function q5Judge(q5Select) {
     q5A.style.background = "silver";
     q5B.style.background = "silver";
     q5C.style.background = "lime";
-  } 
+  }
+  getNextFive.style.display = "block";
   totalScore["q5"] = q5Result;
 }
 
@@ -287,6 +297,7 @@ Q5ToQ6.addEventListener('click', function() {
 });
 
 function q6Judge(q6Select) {
+  const getNextSix = document.getElementById("q6-btn")
   let q6Result = 0;
   if (q6Select === "A") {
     q6Result = 0;
@@ -295,7 +306,7 @@ function q6Judge(q6Select) {
     q6C.style.background = "silver";
     q6D.style.background = "silver";
   } else if (q6Select === "B") {
-    q6Result = 0;
+    q6Result = 10;
     q6A.style.background = "silver";
     q6B.style.background = "lime";
     q6C.style.background = "silver";
@@ -307,12 +318,13 @@ function q6Judge(q6Select) {
     q6C.style.background = "lime";
     q6D.style.background = "silver";
   } else {
-    q6Result = 10;
+    q6Result = 0;
     q6A.style.background = "silver";
     q6B.style.background = "silver";
     q6C.style.background = "silver";
     q6D.style.background = "lime";
   }
+  getNextSix.style.display = "block";
   totalScore["q6"] = q6Result;
 }
 
@@ -344,6 +356,7 @@ Q6ToQ7.addEventListener('click', function() {
 });
 
 function q7Judge(q7Select) {
+  const getNextSeven = document.getElementById("q7-btn")
   let q7Result = 0;
   if (q7Select === "A") {
     q7Result = 0;
@@ -370,6 +383,7 @@ function q7Judge(q7Select) {
     q7C.style.background = "silver";
     q7D.style.background = "lime";
   }
+  getNextSeven.style.display = "block";
   totalScore["q7"] = q7Result;
 }
 
@@ -401,6 +415,7 @@ Q7ToQ8.addEventListener('click', function() {
 });
 
 function q8Judge(q8Select) {
+  const getNextEight = document.getElementById("q8-btn")
   let q8Result = 0;
   if (q8Select === "A") {
     q8Result = 0;
@@ -427,6 +442,7 @@ function q8Judge(q8Select) {
     q8C.style.background = "silver";
     q8D.style.background = "lime";
   }
+  getNextEight.style.display = "block";
   totalScore["q8"] = q8Result;
 }
 
@@ -458,6 +474,7 @@ Q8ToQ9.addEventListener('click', function() {
 });
 
 function q9Judge(q9Select) {
+  const getNextNine = document.getElementById("q9-btn")
   let q9Result = 0;
   if (q9Select === "A") {
     q9Result = 0;
@@ -484,6 +501,7 @@ function q9Judge(q9Select) {
     q9C.style.background = "silver";
     q9D.style.background = "lime";
   }
+  getNextNine.style.display = "block";
   totalScore["q9"] = q9Result;
 }
 
@@ -515,6 +533,7 @@ Q9ToQ10.addEventListener('click', function() {
 });
 
 function q10Judge(q10Select) {
+  const getNextTen = document.getElementById("q10-btn")
   let q10Result = 0;
   if (q10Select === "A") {
     q10Result = 10;
@@ -531,7 +550,8 @@ function q10Judge(q10Select) {
     q10A.style.background = "silver";
     q10B.style.background = "silver";
     q10C.style.background = "lime";
-  } 
+  }
+  getNextTen.style.display = "block";
   totalScore["q10"] = q10Result;
 }
 
@@ -561,12 +581,8 @@ function finalResult() {
 const q10ToEnd = document.getElementById("q10-btn");
 q10ToEnd.addEventListener("click", finalResult);
 
-// q10ToEnd.addEventListener('click', function() {
-//   const getQ10 = document.getElementById("q-10");
-//   const getEnd = document.getElementById("end-page");
-//   getQ10.style.display = "none";
-//   getEnd.style.display = "block";
-//   totalScore = q1Score + q2Score 
-//   //+ q3Score + q4Score + q5Score + q6Score + q7Score + q8Score + q9Score + q10Score;
-//   document.getElementById[result].innerText = totalScore;
-// });
+const EndToTop = document.getElementById('finish-btn');
+
+EndToTop.addEventListener('click', function() {
+  location.reload();
+});
