@@ -6,13 +6,14 @@ body {
   background-image: url(トリコロール.png);
   background-size: cover;
 }
-/* .top-page {
-  width: 100%;
-  height: 100%;
-} */
 h1 {
+  font-size: 35px;
+  font-weight: 1300;
   color:black;
-  text-shadow: 0 0 5px White;
+  text-shadow: 
+    1px 1px 0px white,
+    0 0 1em White,
+    0 0 0.2em white; 
   text-align: center;
 }
 .explanation {
@@ -21,6 +22,7 @@ h1 {
 }
 h2 {
   text-align: center;
+  text-shadow: 0.5px 0.5px 0px white;
 }
 h3 {
   text-align: center;
@@ -37,7 +39,35 @@ p {
 .button {
   width: 150px;
   height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: forestgreen;
+  text-shadow: 
+    1px 1px white, -1px -1px black;
+  color: white;
+  border-radius: 5px;  
+  box-shadow: 
+    inset 2px 2px 3px white, inset -2px -2px 3px black;
 }
+.button:hover {
+  background-color: darkgreen;
+  border-radius: 5px; 
+  text-shadow: 
+    1px 1px black, -1px -1px white; 
+  box-shadow: 
+    inset 2px 2px 3px white, inset -2px -2px 3px black;
+}
+.button:active {
+  color: black;
+  font-family: "Comic Sans MS", "Meiryo", cursive;
+  background-color: lime;
+  border-radius: 5px;
+  text-shadow: 
+    1px 1px gray, -1px -1px black;
+  box-shadow: 
+    inset 2px 2px 3px black, inset -2px -2px 3px white;
+}
+
 table {
   margin: auto;
 }
@@ -50,4 +80,30 @@ table {
   font-size: xx-large;
   font-weight: bolder;
   background-color: rgba(240, 255, 255, 0.7);
+}
+.announce {
+  height: 70px;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow:
+    1px 1px 0px black,
+    5px 5px 20px gray;
+  color: yellow;
+}
+.your-point {
+  height: 30px;
+  font-size: 50px;
+}
+.result {
+  height: 180px;
+  font-size: 130px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 
+    1px 1px 1px black, 1px -1px 1px black,
+    -1px 1px 1px black, -1px -1px 1px black;
+}
+.base-size {
+  font-size: 20px;
+  font-weight: bold;
 }
